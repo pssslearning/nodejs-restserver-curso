@@ -1,16 +1,23 @@
 {
-  "name": "07-restserver",
-  "version": "1.0.0",
-  "description": "Curso Udemy NodeJS de Fernando Herrera Section 8 - REST Server",
-  "main": "server.js",
-  "scripts": {
-    "start": "node server/server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "P.Sancho-Sopranis",
-  "license": "MIT",
-  "dependencies": {
-    "body-parser": "^1.18.3",
-    "express": "^4.16.4"
-  }
+    "name": "07-restserver",
+    "version": "1.0.0",
+    "engines": {
+        "node": "v11.15.0"
+    },
+    "description": "Curso Udemy NodeJS de Fernando Herrera Section 8 - REST Server",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server/server.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "P.Sancho-Sopranis",
+    "license": "MIT",
+    "dependencies": {
+        "bcrypt": "^3.0.6",
+        "body-parser": "^1.19.0",
+        "express": "^4.16.4",
+        "mongoose": "^5.5.5",
+        "mongoose-unique-validator": "^2.0.3",
+        "underscore": "^1.9.1"
+    }
 }

@@ -1,0 +1,16 @@
+_id,role,activo,google,nombre,email,password,__v
+ObjectId("5cc9e2418eb3fc2672ffd64b"),USER_ROLE,true,false,Test 01,Test01@gmail.com,$2b$10$ZNKTilUdlTUG30k1f7nsuu8SNAzTBQImze2KRhXCJemrwLY.DEZlu,0
+ObjectId("5cc9e2528eb3fc2672ffd64c"),USER_ROLE,true,false,Test 02,Test02@gmail.com,$2b$10$wWa1BXYRnhT1Rcl0oGaZRO2a8qIZYsldgAU7yh9CQ355lG6P1ZtQW,0
+ObjectId("5cc9e25b8eb3fc2672ffd64d"),USER_ROLE,true,false,Test 03,Test03@gmail.com,$2b$10$IZ8aw.ApMJce0AOE4tbcKOEWVJ09BrpO/gDd6e2cVk/xKv6mBrW6C,0
+ObjectId("5cc9e2668eb3fc2672ffd64e"),USER_ROLE,true,false,Test 04,Test04@gmail.com,$2b$10$8wLTOuTi0iru5BP49meQdeRQAtwud8kw5.Rezne17W0PqQ81166SG,0
+ObjectId("5cc9e2708eb3fc2672ffd64f"),USER_ROLE,true,false,Test 05,Test05@gmail.com,$2b$10$zW6Tl4i60JBL5cbL7QLZveEx8CzA73KkJHvSXmLjxhfwh40R6/Tr.,0
+ObjectId("5cc9e2788eb3fc2672ffd650"),USER_ROLE,true,false,Test 06,Test06@gmail.com,$2b$10$xGl4KyLPS.VwCC7.eED4qecZ5vmW.F1Zbn5c5MAHFJ5eSgcYFL87e,0
+ObjectId("5cc9e27f8eb3fc2672ffd651"),USER_ROLE,true,false,Test 07,Test07@gmail.com,$2b$10$CSadEIJeb5pVIGS4MmukOO6.Ha.8RX3/FaPsO7CwMy/DXX3wjPqAm,0
+ObjectId("5cc9e2888eb3fc2672ffd652"),USER_ROLE,true,false,Test 08,Test08@gmail.com,$2b$10$E2VZDR0C2pZwLe5Tid4/KelF7ELv3HONYcxnmYA35n0g3feSYddLW,0
+ObjectId("5cc9e2998eb3fc2672ffd653"),USER_ROLE,true,false,Test 09,Test09@gmail.com,$2b$10$WdUy8yrVS6pAAyPuP9Wh1OmtSovF/H9IA8ZvhzMopigldLlRHE5We,0
+ObjectId("5cc9e2a48eb3fc2672ffd654"),USER_ROLE,true,false,Test 10,Test10@gmail.com,$2b$10$m27tq/Ulmpn76w1Gc10VfevvKy9YlT2LODa7VymmishEi2L2ljjuW,0
+ObjectId("5cc9e2ae8eb3fc2672ffd655"),USER_ROLE,true,false,Test 11,Test11@gmail.com,$2b$10$NqyU1RDsVbfmsqFKAIHDLuIYoPVREkrpnmKOsR1NyDpDnegG31Q36,0
+ObjectId("5cc9e2b58eb3fc2672ffd656"),USER_ROLE,true,false,Test 12,Test12@gmail.com,$2b$10$Ph0pmTTPNAZd0ku6N5x5uu8U0iFv5Q4u6GjZjwFiNY2ADf5SBfAkK,0
+ObjectId("5cc9e2bd8eb3fc2672ffd657"),USER_ROLE,true,false,Test 13,Test13@gmail.com,$2b$10$FK4tR5VI6JmVFgzjnuXZOexigmQkS2EmlJyk7AsgGFkfmH4yKDH.y,0
+ObjectId("5cc9e2c48eb3fc2672ffd658"),USER_ROLE,true,false,Test 14,Test14@gmail.com,$2b$10$MfU2kkzBwTNS8fM/vqp0jeU65Z0zRfGCCcSgxHGYRxBGtCO6M7tZy,0
+ObjectId("5cc9e2cc8eb3fc2672ffd659"),USER_ROLE,true,false,Test 15,Test15@gmail.com,$2b$10$QXQQrbcOZuQh3JjobG1VoeCghXRaTjQFl/mdcO/O5pSI5a8b8/cXi,0
