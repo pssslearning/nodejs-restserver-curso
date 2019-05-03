@@ -1,14 +1,22 @@
+// ---------------------------------------------------------
 // Configuración global
+// ---------------------------------------------------------
 require('./config/config');
 
+// ---------------------------------------------------------
 // Express
+// ---------------------------------------------------------
 const express = require('express');
 const app = express();
 
+// ---------------------------------------------------------
 // Mongoose
+// ---------------------------------------------------------
 const mongoose = require('mongoose');
 
+// ---------------------------------------------------------
 // Body-Parser
+// ---------------------------------------------------------
 const bodyParser = require('body-parser');
 
 // --------------------------------------------------------
@@ -17,14 +25,15 @@ const bodyParser = require('body-parser');
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }))
 
+// ---------------------------------------------------------
 // parse application/json
+// ---------------------------------------------------------
 app.use(bodyParser.json())
 
-// --------------------------------------------------------
-// Rutas usuario
-// --------------------------------------------------------
-app.use(require('./routes/usuario'));
-
+// ---------------------------------------------------------
+// Configuración global de rutas
+// ---------------------------------------------------------
+app.use(require('./routes/index'));
 
 mongoose.connect(
     process.env.URLDB, { useNewUrlParser: true, useCreateIndex: true },

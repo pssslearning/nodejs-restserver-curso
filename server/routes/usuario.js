@@ -12,10 +12,15 @@ const Usuario = require('../models/usuario');
 // Underscore.js
 const _ = require('underscore');
 
-// Configuración Handlers
+// Middleware
+const { verificaToken, verificaAdminRole } = require('../middlewares/autenticacion');
+
+// ====================================
+// URL por defecto (app is up)
+// ====================================
 app.get('/', function(req, res) {
     let saludo = {
-        saludo: 'Hello World'
+        appStatus: 'up&running'
     }
     res.json(saludo);
 });
@@ -23,7 +28,7 @@ app.get('/', function(req, res) {
 // ====================================
 // Lista de usuarios Paginadas
 // ====================================
-app.get('/usuarios', function(req, res) {
+app.get('/usuarios', verificaToken, (req, res) => {
 
     const desde = Number(req.query.desde) || 0;
     const limite = Number(req.query.limite) || 5;
@@ -79,7 +84,7 @@ app.get('/usuarios', function(req, res) {
 // ====================================
 // Get usuario por id
 // ====================================
-app.get('/usuarios/:id', function(req, res) {
+app.get('/usuarios/:id', verificaToken, (req, res) => {
 
     const id = req.params.id;
     Usuario.findById(id,
@@ -128,7 +133,7 @@ app.get('/usuarios/:id', function(req, res) {
 // ====================================
 // Crear un nuevo usuario
 // ====================================
-app.post('/usuarios', function(req, res) {
+app.post('/usuarios', [verificaToken, verificaAdminRole], (req, res) => {
 
     const body = req.body;
 
@@ -185,7 +190,7 @@ app.post('/usuarios', function(req, res) {
 // ====================================
 // Modificar usuario por id
 // ====================================
-app.put('/usuarios/:id', function(req, res) {
+app.put('/usuarios/:id', [verificaToken, verificaAdminRole], (req, res) => {
 
     const id = req.params.id;
     const body = _.pick(req.body, ['nombre', 'email', 'role', 'activo']);
@@ -242,7 +247,7 @@ app.put('/usuarios/:id', function(req, res) {
 // ====================================
 // Eliminación física usuario por id
 // ====================================
-// app.delete('/usuarios/:id', function(req, res) {
+// app.delete('/usuarios/:id', verificaToken, (req, res) => {
 
 //     const id = req.params.id;
 
@@ -290,7 +295,7 @@ app.put('/usuarios/:id', function(req, res) {
 // ====================================
 // Eliminación lógica usuario por id
 // ====================================
-app.delete('/usuarios/:id', function(req, res) {
+app.delete('/usuarios/:id', [verificaToken, verificaAdminRole], (req, res) => {
 
     const id = req.params.id;
     const cambiaEstado = {
